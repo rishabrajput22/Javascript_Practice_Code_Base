@@ -1,0 +1,21 @@
+
+.bagbutton{
+  background-color: lightgreen;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.movetowishlist{
+  text-transform:uppercase;
+  font-weight: bold;
+  padding: 5px 35px;
+  border-radius: 15px;
+}
+.salebutton {
+  background-color: lightgreen;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="greetings"></h1>
+  <!-- <button id="my-but" onclick="buttonClicked();">0</button> -->
+  <button onclick="buttonClickedInc();">+</button>
+  <button id="my-but" >0</button>
+  <button onclick="buttonClickedDec();">-</button>
+  
+  <script>
+    let count = 0;
+    function buttonClickedInc() {
+      let button = document.querySelector('#my-but');
+      count++;
+      button.innerText = count;
+
+    }
+    function buttonClickedDec() {
+      let button = document.querySelector('#my-but');
+      count--;
+      button.innerText = count;
+
+    }
+
+    // let count = 0;
+    // function buttonClicked() {
+    //   let button = document.querySelector('#my-but');
+    //   count++;
+    //   button.innerText = count;
+
+    // }
+    
+
+    let date = new Date();
+    let hours = date.getHours();
+    let heading = document.querySelector('#greetings');
+    console.log(date);
+    if(hours > 5 && hours < 12) {
+      heading.innerText = 'Good Morning';
+    }
+    else if (hours > 12 && hours < 18) {
+      heading.innerText = 'Good Afternoon';
+    }
+    else {
+      heading.innerText = 'Good Night';
+    }
+
+
+  </script>
+</body>
+</html>

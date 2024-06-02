@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./style.css">
+  
+</head>
+<body>
+    <h1>Rishab Study</h1>
+    <main>
+      <div>
+        <button class="bagbutton" onclick=" cartquantiy += 1;
+        document.querySelector('#cartsum').innerText = 'Your bag has ' + cartquantiy + ' items'
+        ">Add to Bag</button>
+        <button class="movetowishlist" onclick="cartquantiy-- ;
+        document.querySelector('#cartsum').innerText = 'Your bag has ' + cartquantiy + ' items'
+        ">Move to wishlist</button>
+        <button class="salebutton" onclick="cartquantiy += 2;
+        document.querySelector('#cartsum').innerText = 'Your bag has ' + cartquantiy + ' items'
+        ">Add 1+1 sale Item</button>
+      </div>
+
+      <h1 id="cartsum"> </h1>
+    </main>
+    <script>
+      let cartquantiy = 0;
+      document.querySelector('#cartsum').innerText = 'Your bag has ' + cartquantiy + ' items'
+    </script>
+</body>
+</html>
